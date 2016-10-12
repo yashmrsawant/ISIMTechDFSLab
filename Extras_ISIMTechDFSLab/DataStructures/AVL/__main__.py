@@ -214,21 +214,21 @@ def execs(root):
         input[1] = int(input[1])
 
         if(find(root, input[1])[0] == True):
-            if(input[0].lower() == "insert"):
+            if(input[0].lower() == 'insert'):
                 print("Insert Not Valid as ", str(input[1]), " found in tree having root ", str(root))
-            elif(input[0].lower == "delete"):
+            elif(input[0].lower == 'delete'):
                 delete(find(root, input[1])[1])
             else:
                 print("Type Exit for Exiting...")
         else:
-            if(input[0].lower() == "insert"):
+            if(input[0].lower() == 'insert'):
                 if(root.val == None):
                     root.val = input[1]
                 else:
                     node = avlTree.AVL()
                     node.val = input[1]
                     insert(root, node)
-            elif(input[0].lower == "delete"):
+            elif(input[0].lower == 'delete'):
                 print("Delete Not Valid as ", str(input[1]), " not found in tree having root ", str(root))
             else:
                 print("Type Exit for Exiting...")
