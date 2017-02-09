@@ -3,7 +3,6 @@
 #include <string.h>
 #include <malloc.h>
 #include <sys/time.h>
-#include <process.h>
 #include <cstdlib>
 
 #define TRUE 1
@@ -20,7 +19,7 @@
 
 
 #ifdef _WIN32
-#include <time.h>
+#include <process.h>
 
 FILE* gnuplotpipe = _popen("\"C:\\Program Files (x86)\\mingw\\gnuplot\\bin\\gnuplot\" -persistent", "w");
 #elif
